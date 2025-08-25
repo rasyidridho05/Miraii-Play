@@ -26,10 +26,10 @@ const team = ({ name, photo, role, instagram, linkedin }: teamTypes) => {
           {name}
         </h1>
         <div className="flex w-full justify-between">
-          <h2 className=" text-start text-xl sm:text-base font-medium text-gray-500">
+          <h2 className=" text-start text-base tracking-tight font-medium text-gray-500">
             {role}
           </h2>
-          <div className="flex gap-2 justify-start">
+          <div className="flex justify-start">
             {instagram && (
               <Link
                 href={`${instagram}`}
