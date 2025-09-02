@@ -13,9 +13,9 @@ const Works = () => {
   return (
     <>
       <motion.div variants={fadeTop} {...motionStep}>
-        <section id="portfolio" className="flex justify-center py-16">
+        <section id="games" className="flex justify-center py-8 md:py-16">
           <div className="container max-w-screen-xl px-4 py-6">
-            <div className="flex md:gap-x-12">
+            <div className="flex flex-col-reverse lg:flex-row md:gap-x-12">
               <div className="flex flex-col w-full gap-y-8 my-8">
                 {projects
                   .filter((e: WorksTypes) => e.left == true)
@@ -25,10 +25,10 @@ const Works = () => {
               </div>
               <div className="flex flex-col w-full gap-y-8 my-8">
                 <div className="flex flex-col w-full md:gap-y-4">
-                  <h1 className="text-[#141414] lg:text-6xl">
+                  <h1 className="text-[#141414] text-2xl lg:text-6xl">
                     Worlds We’ve Brought to Life
                   </h1>
-                  <p className="text-gray-500 text-3xl">
+                  <p className="text-gray-500 lg:text-3xl">
                     A little showcase of the games we’ve built.
                   </p>
                 </div>

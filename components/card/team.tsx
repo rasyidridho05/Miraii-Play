@@ -9,7 +9,7 @@ const team = ({ name, photo, role, instagram, linkedin }: teamTypes) => {
   return (
     <div className="w-full bg-none group">
       <div className=" relative bg-gradient-to-b from-[#FFD230] to-[#FF8904] to-50% group-[]:rounded-xl">
-        <div className="h-[296px] w-full relative  overflow-hidden">
+        <div className="h-[400px] lg:h-[296px] w-full relative  overflow-hidden">
           <Image
             src={`/image/team/${photo}`}
             blurDataURL={`/image/team/${photo}`}
@@ -21,12 +21,12 @@ const team = ({ name, photo, role, instagram, linkedin }: teamTypes) => {
           />
         </div>
       </div>
-      <div className="flex flex-col w-full justify-start ">
-        <h1 className=" text-start text-base sm:text-xl font-medium text-[#141414]">
+      <div className="flex flex-col w-full justify-start py-2">
+        <h1 className=" text-start text-xl lg:text-base sm:text-xl font-medium text-[#141414]">
           {name}
         </h1>
         <div className="flex w-full justify-between">
-          <h2 className=" text-start text-base tracking-tight font-medium text-gray-500">
+          <h2 className=" text-start text-lg lg:text-base tracking-tight font-medium text-gray-500">
             {role}
           </h2>
           <div className="flex justify-start">

@@ -12,14 +12,16 @@ const Navbar = () => {
 
   return (
     <nav className={headerClass}>
-      <Link href="/" aria-label={siteMetadata.headerTitle}>
+      <Link href="/" aria-label={siteMetadata.headerTitle} >
         <div className="flex items-center justify-between">
           <div className="mr-3">
             <Link
               className="flex items-center font-semibold text-xl"
               href="/"
+              legacyBehavior
+              passHref
             >
-              <h1 className="text-black ">MIRAII<span className="text-orange-500">.PLAY</span></h1>
+              <h1 className="text-black font-semibold">MIRAII<span className="text-orange-500">.PLAY</span></h1>
             </Link>
           </div>
           {typeof siteMetadata.headerTitle === "string" ? (

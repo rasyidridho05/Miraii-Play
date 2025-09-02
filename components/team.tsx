@@ -12,7 +12,7 @@ const Team = () => {
   return (
     <>
       <section id="team">
-        <div className=" flex justify-center my-12 mt-24 lg:mt-0">
+        <div className=" flex justify-center py-8 md:py-16 lg:mt-24 ">
           <div className="container max-w-screen-xl px-4">
             <div className="">
               <motion.div variants={fadeLeft} {...motionStep}>
@@ -27,7 +27,7 @@ const Team = () => {
               </motion.div>
             </div>
             <motion.div variants={fadeTop} {...motionStep}>
-              <div className="lg:pt-10 flex flex-row w-full gap-6 gap-y-8 my-8 ">
+              <div className="lg:pt-10 flex flex-col lg:flex-row w-full gap-6 gap-y-8 my-8 ">
                 {teams.map((e: teamTypes, i: number) => (
                   <TeamCard key={i} {...e} />
                 ))}

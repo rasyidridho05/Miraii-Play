@@ -6,8 +6,8 @@ import { WorksTypes } from "@/type/works";
 
 const PC = ({ title, genre, live, description, thumbnail }: WorksTypes) => {
   return (
-    <div className="col-span-12 sm:col-span-6 md:col-span-6 bg-none p-4 lg:p-0 group ">
-      <div className="h-[368px] w-full relative overflow-hidden">
+    <div className="col-span-12 sm:col-span-6 md:col-span-6 bg-none lg:p-4 p-0 group ">
+      <div className="h-[248px] lg:h-[368px] w-full relative overflow-hidden">
         <Link href={`${live}`}>
           <Image
             src={`/image/works/${thumbnail}`}
@@ -24,20 +24,20 @@ const PC = ({ title, genre, live, description, thumbnail }: WorksTypes) => {
       </div>
 
       <div className=" flex flex-row justify-between py-2 md:pt-4">
-        <h1 className="text-4xl font-medium mb-1 text-orange-500"> {title} </h1>
-        <div className="flex text-[#141414] gap-x-2 font-medium uppercase">
+        <h1 className="lg:text-4xl text-2xl font-medium mb-1 text-orange-500"> {title} </h1>
+        <div className="flex text-sm items-center text-[#141414] gap-x-2 font-medium uppercase">
           {genre?.map((e: string, i: number) => (
             <span key={i}>[ {e} ]</span>
           ))}
         </div>
       </div>
       <div className="flex w-full justify-between md:pt-4">
-        <div className="text-gray-500 w-2/3">
+        <div className="text-gray-500 w-full text-sm md:text-base lg:w-2/3">
           <p className="">{description}</p>
         </div>
         <div>
           <Link href={`${live}`}>
-            <button className="bg-[#F2F2F2] outline outline-orange-500 text-orange-500 hover:bg-orange-500 hover:outline-[#F2F2F2] hover:text-[#F2F2F2] hover:border transition transform duration-300 rounded-full lg:p-2 lg:text-2xl">
+            <button className="bg-[#F2F2F2] outline outline-orange-500 text-orange-500 hover:bg-orange-500 hover:outline-[#F2F2F2] hover:text-[#F2F2F2] hover:border transition transform duration-300 rounded-full ml-2 md:ml-0 p-1 lg:p-2 lg:text-2xl">
               <IoArrowForwardSharp />
             </button>
           </Link>

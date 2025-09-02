@@ -8,10 +8,10 @@ const Contact = () => {
     <>
       <motion.div variants={fadeTop} {...motionStep}>
         <section id="contact" className="flex justify-center">
-          <div className="container py-12 max-w-screen-xl px-4 bg-[#FF8500] group rounded-xl">
+          <div className="container py-12 max-w-screen-xl mx-4 md:mx-0 px-4 bg-[#FF8500] group rounded-xl">
             <div className="flex flex-col text-center justify-center gap-y-12">
-              <h1 className="text-white lg:text-6xl">Wanna Talk With Us?</h1>
-              <p className="text-white lg:text-xl font-light">
+              <h1 className="text-white text-3xl lg:text-6xl">Wanna Talk With Us?</h1>
+              <p className="text-white  lg:text-xl font-light">
                 Don`t hesitate to get in touch. <br/> Take the first step by clicking
                 the button below.
               </p>
